@@ -5,4 +5,4 @@ echo "* Building jar!*"
 echo "******************"
 
 #PROJ=/home/ricardo/jenkins/jenkins_home/workspace/pipeline-docker-maven
-docker run --rm -v /root/.m2:/root/.m2 -v /home/usuario/EntrenamientoDevOps/jenkins/java-app:/app -w /app maven:3-alpine "$@"
+docker run --rm -v /root/.m2:/root/.m2 -v /home/usuario/EntrenamientoDevOps/jenkins/jenkins_home/workspace/pipeline-docker-maven/java-app:/app -w /app maven:3-alpine "$@"
